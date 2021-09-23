@@ -1,4 +1,4 @@
-# Three.js Terrain
+# Three.js 3D Terrain
 
 Courtesy of Bruno Simon of https://threejs-journey.xyz/
 

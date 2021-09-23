@@ -95,10 +95,6 @@ camera.position.y = 0;
 camera.position.z = 2;
 scene.add(camera);
 
-// Controls
-// const controls = new OrbitControls(camera, canvas)
-// controls.enableDamping = true
-
 /**
  * Renderer
  */
@@ -126,14 +122,8 @@ const clock = new THREE.Clock();
 const tick = () => {
   const elapsedTime = clock.getElapsedTime();
 
-  // Update objects
-  //   sphere.rotation.y = 0.5 * elapsedTime;
-
   plane.rotation.z = 0.5 * elapsedTime;
   plane.material.displacementScale = 0.3 + mouseY * 0.0008;
-
-  // Update Orbital Controls
-  // controls.update()
 
   // Render
   renderer.render(scene, camera);
